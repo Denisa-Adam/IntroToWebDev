@@ -1,9 +1,78 @@
 <!DOCTYPE html>
+<!--
+	Name: Denisa Adam
+	Date Created: 09.03.2021
+	Most recent revision: 09.03.2021
+-->
 <html>
 <head>
 	<title>Contact Us</title>
 </head>
 <body>
+	<main>
+		<header>
+			<h1 style="text-align: center;">Wanmin Restaurant</h1>
+		</header>
+		<hr/>
+		<nav>
+			<ul style="list-style: none; text-decoration: none;">
+				<a href="index.html"><li style="float: left; padding-right: 5%;">Home</li></a>
+				<a href="menu.html"><li style="float: left; padding-right: 5%;">Menu</li></a>
+				<a href="contact.html"><li style="float: left; padding-right: 5%;">Contacts Us</li></a>
+			</ul>
+			<br/>
+			<hr  style="clear: left;"/>
+		</nav>
+        <div align="center">
+		<form action="submit.html" method="POST">
+			<label for="name"> Name: </label> 
+	    	<input type="text" id="name" name="name"> <br><br>
+	    	<label for="email"> Email: </label>
+	    	<input type="text" id="email" name="email"> <br><br>
+	    	<label for="phone"> Phone: </label> 
+	    	<input type="text" id="phone" name="phone"> <br><br>
+
+	    	<label for="inquiry"> Reason for Inquiry:</label>
+	    	<select id="inquiry" name="inquiry">
+	    		<option value="catering" selected>Catering</option>
+	    		<option value="private">Private Party</option>
+	    		<option value="feedback">Feedback</option>
+	    		<option value="other"> Other</option>
+	    	</select>
+	    	<br> <br>
+
+	    	<label for="info">Additional Information:</label>
+	    	<textarea id="info" name="info"></textarea><br/><br>
+
+	    	<span> Have you been to the restaurant? </span>
+	    		<input type="radio" id="choice1" name="questionnaire" value="yes">
+	    		<label for="choice1"> Yes</label>
+	    		<input type="radio" id="choice2" name="questionnaire" value="no">
+	    		<label for="choice2"> No</label>
+	    		<br><br>
+
+	    	<span>Best day to contact you: </span>
+	    		<input type="checkbox" id="monday" name="day" value="monday">
+	    		<label for="monday"> M </label> 
+	    		<input type="checkbox" id="tuesday" name="day" value="tuesday">
+	    		<label for="tuesday"> T </label> 
+	    		<input type="checkbox" id="wednesday" name="day" value="wednesday">
+	    		<label for="wednesday"> W </label> 
+	    		<input type="checkbox" id="thursday" name="day" value="thursday">
+	    		<label for="thursday"> Th </label> 
+	    		<input type="checkbox" id="friday" name="day" value="friday">
+	    		<label for="friday"> F </label> <br/><br>
+
+	    	<input type="submit" name="submit" value="Send Request">
+		</form>
+	    </div>
+
+	    <footer>
+			<hr/>
+		    <p align="center">Rezervelor 54, Bucharest, Ilfov, 042362</p>
+		    <p align="center">0741199758</p>
+		</footer>
+	</main>
 
 </body>
 </html>
