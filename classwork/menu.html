@@ -6,62 +6,138 @@
 -->
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Menu</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+
+    <style type="text/css">
+    	div.row h2{
+    		font-weight: bold;
+    		font-size: 1.8em;
+    	}
+    	div.row{
+    		text-align: center;
+    		background-color: #F7F7F2;
+    		width: 90%;
+    		margin: auto;
+    		padding-top: 10px;
+    	}
+
+    	table, td {
+    		border: 1px solid #899878;
+    		border-collapse: collapse;
+    		color: #222725;
+    	}
+
+    	table{
+    		width: 90%;
+    		margin: auto;
+    	}
+
+    	div.beverages{
+    		padding-bottom: 20px;
+    	}
+
+    	table caption{
+    		font-weight: bold;
+    		color: #222725;
+    		caption-side: top;
+    	}
+
+    	tr:nth-child(even){
+    		background-color: #CCD3C5;
+    	}
+    </style>
 </head>
 <body>
-	<main>
-		<header>
-			<h1 style="text-align: center;">Wanmin Restaurant</h1>
+	<main class="container">
+		<header class="jumbotron">
+			<h1>Wanmin Restaurant</h1>
 		</header>
-		<hr/>
-		<nav>
-			<ul style="list-style: none; text-decoration: none;">
-				<a href="index.html"><li style="float: left; padding-right: 5%;">Home</li></a>
-				<a href="menu.html"><li style="float: left; padding-right: 5%;">Menu</li></a>
-				<a href="contact.html"><li style="float: left; padding-right: 5%;">Contacts Us</li></a>
-			</ul>
-			<br/>
-			<hr  style="clear: left;"/>
+
+		<nav class="rounded">
+				<a href="index.html" class="btn badge-pill">Home</a>
+				<a href="menu.html" class="btn badge-pill">Menu</a>
+				<a href="contact.html" class="btn badge-pill">Contacts Us</a>
 		</nav>
-		<table width="90%" style="text-align: center; padding-top: 3vh; margin: auto;">
-			<tr>
-				<th>Jueyun Chili Chicken</th>
-				<th>Crystal Shrimp</th>
-				<th>Black-Back Perch Stew</th>
-			</tr>
-			<tr>
-				<td>Cold chicken mixed in dressings. The finesse technique used in mixing the dish retained the freshness of the delightful juice contained within the chicken. The glowing gold chicken skin hides a mildly hot flavor underneath.</td>
-				<td>The stuffing is taken from whole fresh shrimp, and the glistening quality of the flour can be guessed at from the translucence of the outer skin. Has a springy, tasty chew.</td>
-				<td>A poached fish dish. The fresh and tasty fish fillets are tender and juicy. The secret to this recipe is adding powdered Violetgrass into the heated oil to give the dish that aromatic scent. It's spicy, but not too spicy.</td>
-			</tr>
-			<tr>
-				<td>$7.45</td>
-				<td>$10</td>
-				<td>$8.95</td>
-			</tr>
-			<tr>
-				<th>Come and Get It</th>
-				<th>Triple-Layered Consommé</th>
-				<th>Universal Peace</th>
-			</tr>
-			<tr>
-				<td>A dish made out of a luxurious variety of ingredients. There is no great refinement in the making of this food. Whenever this dish is served up, the person at the head of the table will invite everyone to dig in, saying "Come on, eat, eat," hence the name.</td>
-				<td>A neatly arranged dish. The ham, fowl, and bamboo shoots have been sliced into threads of equal length, and they've been laid out neatly in the soup bowl after being steamed at high heat, before being covered in consommé. The layers are distinct, and the mouthfeel is salty yet fresh.</td>
-				<td>Colorful staple food. Maintains perfect balance between soft and fragrant rice and all kinds of carefully selected sweet ingredients. This dish is mainly known for its meaning as a symbol of prosperity and peace, and less so for its taste. However, with such noble ideals behind it, its flavor should not disappoint.</td>
-			</tr>
-			<tr>
-				<td>$10.45</td>
-				<td>$7/95</td>
-				<td>$9.95</td>
-			</tr>
-		</table>
-		<footer>
-			<hr/>
-		    <p align="center">Rezervelor 54, Bucharest, Ilfov, 042362</p>
-		    <p align="center">0741199758</p>
+
+		<div class="row">
+			<div class="col-lg-4 col-sd-12">
+				<h2> Jueyun Chili Chicken</h2>
+				<p>Cold chicken mixed in dressings. The finesse technique used in mixing the dish retained the freshness of the delightful juice contained within the chicken. The glowing gold chicken skin hides a mildly hot flavor underneath.</p>
+				<p>$7.45</p>
+			</div>
+
+			<div class="col-lg-4 col-sd-12">
+				<h2>Crystal Shrimp</h2>
+				<p>The stuffing is taken from whole fresh shrimp, and the glistening quality of the flour can be guessed at from the translucence of the outer skin. Has a springy, tasty chew.</p>
+				<p>$10</p>
+			</div>
+
+			<div class="col-lg-4 col-sd-12">
+				<h2>Black-Back Perch Stew</h2>
+				<p>A poached fish dish. The fresh and tasty fish fillets are tender and juicy. The secret to this recipe is adding powdered Violetgrass into the heated oil to give the dish that aromatic scent. It's spicy, but not too spicy.</p>
+				<p>$8.95</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sd-12">
+				<h2>Come and Get It</h2>
+				<p>A dish made out of a luxurious variety of ingredients. There is no great refinement in the making of this food. Whenever this dish is served up, the person at the head of the table will invite everyone to dig in, saying "Come on, eat, eat," hence the name.</p>
+				<p>$10.45</p>
+			</div>
+
+			<div class="col-lg-4 col-sd-12">
+				<h2>Triple-Layered Consommé</h2>
+				<p>A neatly arranged dish. The ham, fowl, and bamboo shoots have been sliced into threads of equal length, and they've been laid out neatly in the soup bowl after being steamed at high heat, before being covered in consommé. The layers are distinct, and the mouthfeel is salty yet fresh.</p>
+				<p>$7.95</p>
+			</div>
+
+			<div class="col-lg-4 col-sd-12">
+				<h2>Universal Peace</h2>
+				<p>Colorful staple food. Maintains perfect balance between soft and fragrant rice and all kinds of carefully selected sweet ingredients. This dish is mainly known for its meaning as a symbol of prosperity and peace, and less so for its taste. However, with such noble ideals behind it, its flavor should not disappoint.</p>
+				<p>$9.95</p>
+			</div>
+		</div>	
+		<div class="row beverages">
+			<div class="col-lg-12 col-sd-12">
+				<table>
+					<caption> Beverages </caption>
+					<tr>
+						<td>Root Beer</td>
+						<td>$3.00</td>
+					</tr>
+					<tr>
+						<td>Bottled Water</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Lemonade</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Iced Tea</td>
+						<td>$1.25</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+			
+		<footer class="jumbotron">
+		    <p>Rezervelor 54, Bucharest, Ilfov, 042362</p>
+		    <p>0741199758</p>
 		</footer>
 		
 	</main>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </body>
 </html>

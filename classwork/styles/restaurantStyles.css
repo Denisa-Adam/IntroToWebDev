@@ -1,0 +1,93 @@
+/*
+	Name: Denisa Adam
+	Date Created: 12.03.2021
+	Most recent revision: 12.03.2021
+*/
+*{
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+body{
+	font-family: 'Shippori Mincho B1', serif, arial;
+	width: 80vw;
+	margin: auto;
+	background-color: #7F7F2;
+	color: #121113
+	font-size: 200px;
+}
+
+ /* HEADER, FOOTER styling */
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Redressed', cursive, serif, arial;
+}
+
+header.jumbotron, footer.jumbotron{
+	background-color: #899878;
+	color: #222725;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+header.jumbotron h1{
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+footer.jumbotron{
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+/* NAVIGATION styling */
+nav{
+	/*border-top: thin #899878 solid;
+	border-bottom: thin #899878 solid;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+	background-color: #CCD3C5;
+	
+}
+
+nav .btn{
+	background-color: #1C211F;
+	color: #E8E8D9;
+	margin-left: 15px;
+}
+
+nav .btn:hover{
+	font-weight: bold;
+}
+
+/* MAIN CONTENT styling */
+
+section.main-content{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.main-content h2{
+	margin-top: 50px;
+}
+
+a.external-link{
+	color: #899878;
+	text-decoration: underline;
+}
+
+a.external-link:hover{
+	font-weight: bold;
+}
+
+a.external-link:active{
+	text-decoration: none;
+}
+
+a.external-link:visited{
+	color: #677359;
+}
+
