@@ -21,7 +21,9 @@ for (var n = 1; n <= 7; n++) {
 // Print each number to the JavaScript console.
 console.log("FOR ONE TO TEN");
 // Write your code here:
-
+for (var i = 1; i <= 10; i++) {
+	console.log(i);
+}
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -39,7 +41,9 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
-
+for(var i = 2; i <=12; i+=2){
+	console.log(i);
+}
 
 
 // 3. COUNT BACKWARD FROM SIX
@@ -58,14 +62,16 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // 0
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
-
+for(var i = 6; i >= 0; i--){
+	console.log(i);
+}
 
 
 // 4. SUM EVENS
 // ============
 // You're given two variables with numeric values:
 
-var limit = 10; // We stop looping when we reach this number.
+var limit = 4; // We stop looping when we reach this number.
 var sum = 0;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
@@ -77,6 +83,11 @@ var sum = 0;    // We add even numbers to this variable.
 // What happens if you set limit to a negative number?
 console.log("SUM EVENS");
 // Write your code here:
+for(var i = 0; i <= limit; i++){
+	if(i % 2 === 0){
+		sum += i;
+	}
+}
 
 console.log("limit = %s, sum = %s", limit, sum);
 
@@ -84,7 +95,7 @@ console.log("limit = %s, sum = %s", limit, sum);
 // =========================
 // You're given two variables with numeric values:
 
-var winniesFavoriteNumber = 53; // Winnie's favorite number
+var winniesFavoriteNumber = 49; // Winnie's favorite number
 var kaisFavoriteNumber = 44;    // Kai's favorite number
 
 // Write a for loop that loops until it reaches either winniesFavoriteNumber 
@@ -94,8 +105,14 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 // Try adding a third, or forth, or fifth favorite number!
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
-
-
+var i = 0;
+while(i <= winniesFavoriteNumber+kaisFavoriteNumber){
+	if(i === winniesFavoriteNumber || i === kaisFavoriteNumber){
+		console.log(i);
+		break;
+	}
+	i++;
+}
 
 // CHALLENGE: WHILE LOOPS
 // ======================
