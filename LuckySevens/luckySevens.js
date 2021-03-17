@@ -3,6 +3,13 @@ var startingBet = document.getElementById("startingBet");
 var results = document.getElementById("results");
 var play = document.getElementById("play");
 
+function resetView() {
+    luckySevens.className = "needs-validation";
+    results.style.display = "none";
+    play.innerText = "Play";
+    num1.focus();
+}
+
 function validate() {
 
     luckySevens.className = "needs-validation";
@@ -47,6 +54,7 @@ function validate() {
     document.getElementById("rollAtHighest").innerText = rollAtHighest;
 
     results.style.display = "block";
+    play.innerText = "Play again";
 
     // We always return false so that the form doesn't submit.
     // Submission causes the page to reload.
