@@ -34,7 +34,6 @@ function validate() {
     	dice1 = Math.floor(Math.random() * numSides) + 1;
     	dice2 = Math.floor(Math.random() * numSides) + 1;
     	totalRolls++;
-    	console.log(dice1);
 
     	if((dice1 + dice2) == 7){
     		currentMoney += 4;
