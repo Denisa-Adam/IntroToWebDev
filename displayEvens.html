@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Display Evens</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Display Evens </h1>
+
+		<form name="numbers" class="needs-validation" style="width: 40%;" onsubmit="return validate();" novalidate >
+			<div class="form-row">
+				<div class="form-group col">
+					<label for="num1">Starting Number</label>
+					<input type="number" class="form-control" id="num1" required>
+					<div class="invalid-number">
+	                    Starting Number is required and must be a number.
+	                </div>
+	            </div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label for="num2">Ending Number</label>
+					<input type="number" class="form-control" id="num2" required>
+					<div class="invalid-number">
+	                    Ending Number is required and must be a number larger than the starting number.
+	                </div>
+	            </div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label for="step">Step</label>
+					<input type="number" class="form-control" id="step" required>
+					<div class="invalid-number">
+	                    Step is required and must be a positive number.
+	                </div>
+	            </div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col">
+					<button type="submit" id="submitButton" class="btn btn-primary">
+                        Display Evens</button>
+				</div>
+			</div>
+		</form>
+		
+		<div id="results" style="display: none">
+			<p> Here are the even numbers:</p>
+			<p id="resultArray"></p>
+
+		</div>
+
+
+	</div>
+
+<script src="displayEvens.js"></script>
+</body>
+</html>
