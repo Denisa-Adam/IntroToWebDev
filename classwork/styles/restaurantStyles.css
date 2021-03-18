@@ -5,6 +5,7 @@
 */
 *{
 	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	font-size: 16px;
 }
@@ -26,6 +27,7 @@ header.jumbotron, footer.jumbotron{
 	background-color: #899878;
 	color: #222725;
 	margin-bottom: 2px;
+	margin-top: 1px;
 	text-align: center;
 }
 
@@ -35,13 +37,31 @@ header.jumbotron h1{
 	text-align: center;
 }
 
+header.jumbotron{
+	height: 20vh;
+	min-height: 15vh;
+
+}
+
 footer.jumbotron{
 	margin-top: 20px;
 	font-weight: bold;
 }
 
+div.announcement {
+	margin: 0px;
+	padding: 1px;
+	background-color: #121113;
+	color: #E8E8D9;
+	font-size: 1.5em;
+	text-align: center;
+}
+
 /* NAVIGATION styling */
-nav{
+
+.material-icons.md-18 { font-size: 18px; }
+
+.container nav.rounded{
 	/*border-top: thin #899878 solid;
 	border-bottom: thin #899878 solid;*/
 	padding-top: 10px;
@@ -55,10 +75,15 @@ nav .btn{
 	background-color: #1C211F;
 	color: #E8E8D9;
 	margin-left: 15px;
+	font-size: 16px;
 }
 
 nav .btn:hover{
 	font-weight: bold;
+}
+
+nav .btn:active {
+
 }
 
 /* MAIN CONTENT styling */
