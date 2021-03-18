@@ -1,9 +1,14 @@
+/*
+	Name: Denisa Adam
+	Date Created: 18.03.2021
+	Most recent revision: 18.03.2021
+*/
+
+
 var contactForm = document.forms["contact"];
 var name = document.getElementById("name");
 var email = document.getElementById("email");
 var submit = document.getElementById("submit")
-
-
 
 
 
@@ -21,8 +26,5 @@ function validate() {
         return false;    
     }
     
-
-    // We always return false so that the form doesn't submit.
-    // Submission causes the page to reload.
     return false;
 }

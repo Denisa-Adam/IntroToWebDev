@@ -1,8 +1,9 @@
 /*
 	Name: Denisa Adam
 	Date Created: 12.03.2021
-	Most recent revision: 12.03.2021
+	Most recent revision: 18.03.2021
 */
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -104,6 +105,10 @@ a.external-link{
 	text-decoration: underline;
 }
 
+a.external-link:visited{
+	color: #677359;
+}
+
 a.external-link:hover{
 	font-weight: bold;
 }
@@ -112,7 +117,5 @@ a.external-link:active{
 	text-decoration: none;
 }
 
-a.external-link:visited{
-	color: #677359;
-}
+
 
